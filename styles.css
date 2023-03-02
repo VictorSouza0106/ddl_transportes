@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin-bottom: 500px;
+  background-color: gray;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.logo img {
+  width: 30%;
+}
+
+section:nth-child(2),
+section:nth-child(4) {
+  margin: 0 80px;
+}
+section:nth-child(2) .cards_list,
+section:nth-child(4) .cards_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+section:nth-child(2) .cards_list .card-box,
+section:nth-child(4) .cards_list .card-box {
+  border: 1px #000 solid;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 100%;
+  padding: 12px;
+  gap: 12px;
+}
+section:nth-child(2) .cards_list .card-box img,
+section:nth-child(4) .cards_list .card-box img {
+  width: 100%;
+}
+section:nth-child(2) .cards_list .card-box .card-title,
+section:nth-child(4) .cards_list .card-box .card-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+section:nth-child(2) .cards_list .card-box .card-subtitle,
+section:nth-child(4) .cards_list .card-box .card-subtitle {
+  font-size: 0.85rem;
+  text-align: center;
+}
+section:nth-child(2) .cards_list .card-box:nth-child(even),
+section:nth-child(4) .cards_list .card-box:nth-child(even) {
+  background-color: yellow;
+  margin-bottom: 100px;
+}
+
+section:nth-child(3) {
+  height: 100%;
+  display: flex;
+  margin-bottom: 75px;
+}
+section:nth-child(3) img {
+  width: 50%;
+}
+section:nth-child(3) .info {
+  background-color: white;
+  width: 100%;
+}
+
+.wpp-button {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  animation: jumping 2s linear 0s infinite;
+  right: 12px;
+  bottom: 50px;
+}
+.wpp-button img {
+  right: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.wpp-hover {
+  height: 35px;
+  width: 0px;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -12px;
+  background-color: green;
+  overflow: hidden;
+  transition: all 1s;
+}
+.wpp-hover span {
+  font-size: 0.85rem;
+  color: white;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.wpp-hover:hover {
+  width: 170px;
+}
+
+.wpp-button:hover .wpp-hover {
+  width: 170px;
+}
+
+@keyframes jumping {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 55px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */
