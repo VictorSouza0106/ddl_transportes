@@ -214,10 +214,11 @@ body {
   }
   .wpp-button img {
     right: 0;
-    width: 35px;
-    height: 35px;
+    width: 80px;
+    height: 80px;
   }
   .wpp-hover {
+    opacity: 0;
     height: 35px;
     width: 0px;
     border-radius: 6px 0 0 6px;
@@ -237,6 +238,7 @@ body {
   }
   .wpp-hover:hover {
     width: 170px;
+    width: 0;
   }
   .wpp-button:hover .wpp-hover {
     width: 170px;
