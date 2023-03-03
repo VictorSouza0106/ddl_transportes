@@ -144,113 +144,228 @@ body {
   }
 }
 
-section:nth-child(2),
-section:nth-child(4) {
-  margin: 0 80px;
-  .cards_list {
+// -------------------- CELLPHONE STYSHEET ----------------
+@media only screen and (max-width: 600px) {
+  section:nth-child(2),
+  section:nth-child(4) {
+    margin: 0 80px;
+    .cards_list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: 30px;
+
+      .card-box {
+        border: 1px #000 solid;
+        display: flex;
+        flex-direction: column;
+        background-color: fuchsia;
+
+        width: 100%;
+        padding: 12px;
+
+        gap: 12px;
+
+        img {
+          width: 100%;
+        }
+
+        .card-title {
+          font-size: 1.3rem;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        .card-subtitle {
+          font-size: 0.85rem;
+          text-align: center;
+        }
+
+        &:nth-child(even) {
+          background-color: yellow;
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+
+  section:nth-child(3) {
+    height: 100%;
+    display: flex;
+
+    margin-bottom: 75px;
+
+    img {
+      width: 50%;
+    }
+
+    .info {
+      background-color: white;
+      width: 100%;
+    }
+  }
+  .wpp-button {
+    cursor: pointer;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    animation: jumping 2s linear 0s infinite;
+
+    right: 12px;
+    bottom: 50px;
+
+    img {
+      right: 0;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .wpp-hover {
+    height: 35px;
+    width: 0px;
+    border-radius: 6px 0 0 6px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    gap: 30px;
+    margin-right: -12px;
+    background-color: green;
 
-    .card-box {
-      border: 1px #000 solid;
-      display: flex;
-      flex-direction: column;
-      background-color: red;
+    overflow: hidden;
+    transition: all 1s;
 
-      width: 100%;
-      padding: 12px;
+    span {
+      font-size: 0.85rem;
+      color: white;
+      white-space: nowrap;
+      font-weight: bold;
+    }
 
-      gap: 12px;
-
-      img {
-        width: 100%;
-      }
-
-      .card-title {
-        font-size: 1.3rem;
-        font-weight: 400;
-        text-align: center;
-      }
-
-      .card-subtitle {
-        font-size: 0.85rem;
-        text-align: center;
-      }
-
-      &:nth-child(even) {
-        background-color: yellow;
-        margin-bottom: 100px;
-      }
+    &:hover {
+      width: 170px;
     }
   }
-}
 
-section:nth-child(3) {
-  height: 100%;
-  display: flex;
-
-  margin-bottom: 75px;
-
-  img {
-    width: 50%;
-  }
-
-  .info {
-    background-color: white;
-    width: 100%;
-  }
-}
-.wpp-button {
-  cursor: pointer;
-
-  position: fixed;
-  display: flex;
-  justify-content: center;
-
-  animation: jumping 2s linear 0s infinite;
-
-  right: 12px;
-  bottom: 50px;
-
-  img {
-    right: 0;
-    width: 35px;
-    height: 35px;
-  }
-}
-
-.wpp-hover {
-  height: 35px;
-  width: 0px;
-  border-radius: 6px 0 0 6px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-right: -12px;
-  background-color: green;
-
-  overflow: hidden;
-  transition: all 1s;
-
-  span {
-    font-size: 0.85rem;
-    color: white;
-    white-space: nowrap;
-    font-weight: bold;
-  }
-
-  &:hover {
+  .wpp-button:hover .wpp-hover {
     width: 170px;
   }
 }
 
-.wpp-button:hover .wpp-hover {
-  width: 170px;
+@media only screen and (min-width: 600px) {
+  section:nth-child(2),
+  section:nth-child(4) {
+    margin: 0 80px;
+    .cards_list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 30px;
+
+      .card-box {
+        border: 1px #000 solid;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+
+        width: 100%;
+        padding: 12px;
+
+        gap: 12px;
+
+        img {
+          width: 100%;
+        }
+
+        .card-title {
+          font-size: 1.3rem;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        .card-subtitle {
+          font-size: 0.85rem;
+          text-align: center;
+        }
+
+        &:nth-child(even) {
+          background-color: yellow;
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+
+  section:nth-child(3) {
+    height: 100%;
+    display: flex;
+
+    margin-bottom: 75px;
+
+    img {
+      width: 50%;
+    }
+
+    .info {
+      background-color: white;
+      width: 100%;
+    }
+  }
+  .wpp-button {
+    cursor: pointer;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    animation: jumping 2s linear 0s infinite;
+
+    right: 12px;
+    bottom: 50px;
+
+    img {
+      right: 0;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .wpp-hover {
+    height: 35px;
+    width: 0px;
+    border-radius: 6px 0 0 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: -12px;
+    background-color: green;
+
+    overflow: hidden;
+    transition: all 1s;
+
+    span {
+      font-size: 0.85rem;
+      color: white;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    &:hover {
+      width: 170px;
+    }
+  }
+
+  .wpp-button:hover .wpp-hover {
+    width: 170px;
+  }
 }
 
 @keyframes jumping {
