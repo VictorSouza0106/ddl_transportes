@@ -189,7 +189,6 @@ body {
   section:nth-child(2) .cards_list .card-box:nth-child(even),
   section:nth-child(4) .cards_list .card-box:nth-child(even) {
     background-color: yellow;
-    margin-bottom: 100px;
   }
   section:nth-child(3) {
     height: 100%;
@@ -214,8 +213,8 @@ body {
   }
   .wpp-button img {
     right: 0;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
   }
   .wpp-hover {
     opacity: 0;
@@ -265,6 +264,9 @@ body {
     width: 100%;
     padding: 12px;
     gap: 12px;
+    opacity: 0;
+
+    transition: all 1s
   }
   section:nth-child(2) .cards_list .card-box img,
   section:nth-child(4) .cards_list .card-box img {
@@ -284,7 +286,7 @@ body {
   section:nth-child(2) .cards_list .card-box:nth-child(even),
   section:nth-child(4) .cards_list .card-box:nth-child(even) {
     background-color: yellow;
-    margin-bottom: 100px;
+    
   }
   section:nth-child(3) {
     height: 100%;
